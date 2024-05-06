@@ -3,7 +3,7 @@
 
 <head>
 
-   <title>HomePage</title>
+   <title>Contact</title>
    <meta charset='utf-8'>
    <meta name='viewport' content='width=device-width, initial-scale=1'>
    <!-- #region link to Style -->
@@ -26,18 +26,16 @@
 <body class='debug'>
 
    <div id='app'>
-      <h1>Hello World</h1>
-
-      <button>
-         <a href="/about">
-            About Me
-         </a>
-      </button>
-      <button>
-         <a href="/contacts">
-            Our Contacts
-         </a>
-      </button>
+      <h1>Welcome to our contact page</h1>
+      <div>
+         <p>
+            {{$message}}
+         </p>
+         <p>
+            {{$last_message}}
+         </p>
+      </div>
+      <button><a href="/">Home</a></button>
    </div>
    <!-- #region Dev-only cdns, disable in production -->
    <!-- #region link to Vue-script -->

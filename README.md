@@ -7,4 +7,4 @@
 
 ## Bonus:
 
- - Creiamo più di una pagina e visualizziamo un header menu con i link di tutte le pagine, utilizzando la funzione route()
+ - Creiamo più di una pagina e visualizziamo un header menu con i link di tutte le pagine, utilizzando la funzione route().

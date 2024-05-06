@@ -16,3 +16,24 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('homepage');
 });
+
+Route::get('/about', function () {
+    $data = 
+    [
+        'Heisenberg',
+        'Pippo',
+        'Pluto',
+        'Paperino',
+    ];
+    //dd($data);
+    return view('aboutpage', compact("data"));
+});
+
+Route::get('/contacts', function () {
+    $data =
+    [
+        "message" => "Ciah",
+        "last_message" => "Remember me as a GianCarlo Magalli..",
+    ];
+    return view('contactpage', $data);
+});
