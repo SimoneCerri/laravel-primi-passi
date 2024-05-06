@@ -26,13 +26,69 @@
 <body class='debug'>
 
    <div id='app'>
-      <h1>Welcome to page "about"</h1>
-      <div>
-         @foreach($data as $name)
-         <p>{{ $name }}</p>
-         @endforeach
-      </div>
-      <button><a href="/">Home</a></button>
+
+      <header>
+         <div class="container">
+            <div class="row">
+               <button><a href="/">Home</a></button>
+               <button>
+                  <a href="/contacts">
+                     Our Contacts
+                  </a>
+               </button>
+            </div>
+         </div>
+      </header>
+
+      <main>
+         <div class="container">
+            <h1>Welcome to page "about"</h1>
+            <div>
+               @foreach($data as $name)
+               <p>{{ $name }}</p>
+               @endforeach
+            </div>
+         </div>
+      </main>
+
+      <footer>
+
+      </footer>
+
+      <style>
+         body {
+            background-color: #333;
+
+            .container {
+               max-width: 1200px;
+               width: 80%;
+               margin: 0 auto;
+
+               p,
+               h1 {
+                  text-align: center;
+               }
+
+               .row {
+                  display: flex;
+                  justify-content: space-between;
+
+                  button {
+                     padding: 1em;
+                     border: none;
+                     background-color: white;
+                     border-radius: 20px;
+
+                     a {
+                        text-decoration: none;
+                        color: red;
+                     }
+                  }
+               }
+            }
+         }
+      </style>
+
    </div>
    <!-- #region Dev-only cdns, disable in production -->
    <!-- #region link to Vue-script -->

@@ -26,16 +26,73 @@
 <body class='debug'>
 
    <div id='app'>
-      <h1>Welcome to our contact page</h1>
-      <div>
-         <p>
-            {{$message}}
-         </p>
-         <p>
-            {{$last_message}}
-         </p>
-      </div>
-      <button><a href="/">Home</a></button>
+
+      <header>
+         <div class="container">
+            <div class="row">
+               <button><a href="/">Home</a></button>
+               <button>
+                  <a href="/about">
+                     About Me
+                  </a>
+               </button>
+            </div>
+         </div>
+      </header>
+
+      <main>
+         <div class="container">
+            <h1>Welcome to our contact page</h1>
+            <div>
+               <p>
+                  {{$message}}
+               </p>
+               <p>
+                  {{$last_message}}
+               </p>
+            </div>
+         </div>
+      </main>
+
+      <footer>
+
+      </footer>
+
+      <style>
+         body {
+            background-color: #333;
+
+            .container {
+               max-width: 1200px;
+               width: 80%;
+               margin: 0 auto;
+
+               p,
+               h1
+               {
+                  text-align: center;
+               }
+
+               .row {
+                  display: flex;
+                  justify-content: space-between;
+
+                  button {
+                     padding: 1em;
+                     border: none;
+                     background-color: white;
+                     border-radius: 20px;
+
+                     a {
+                        text-decoration: none;
+                        color: red;
+                     }
+                  }
+               }
+            }
+         }
+      </style>
+
    </div>
    <!-- #region Dev-only cdns, disable in production -->
    <!-- #region link to Vue-script -->
